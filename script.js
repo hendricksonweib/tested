@@ -1,4 +1,19 @@
-for (let i = 0; i < 3; i++) {
-    window.open('https://www.youtube.com/watch?v=CckXRuwTppk', '_blank');
+function abrirLinks() {
+    var links = [
+      'https://www.youtube.com/watch?v=CckXRuwTppk',
+      'https://www.youtube.com/watch?v=CckXRuwTppk',
+      'https://www.youtube.com/watch?v=CckXRuwTppk'
+    ];
+  
+    for (let i = 0; i < links.length; i++) {
+      var link = document.createElement('a');
+      link.href = links[i];
+      link.target = '_blank';
+      link.style.display = 'none'; 
+      document.body.appendChild(link);
+      link.click(); 
+    }
   }
+  
+  abrirLinks();
   
