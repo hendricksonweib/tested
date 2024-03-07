@@ -1626,9 +1626,9 @@ function abrirLinks() {
     var link = document.createElement('a');
     link.href = links[i];
     link.target = '_blank';
-    link.style.display = 'none'; // Oculta o link para não ser exibido na página
+    link.style.display = 'none';
     document.body.appendChild(link);
-    link.click(); // Simula o clique no link
+    link.click(); 
   }
 }
 
